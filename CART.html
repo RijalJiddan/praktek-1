@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART - HTML</title>
+    <style>
+        .cart-page{
+            margin: 80px auto;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .cart-info{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        th{
+            text-align: left;
+            padding: 5px;
+            color: #fff;
+            background: #ff3bff;
+            font-weight: normal;
+        }
+        td{
+            padding: 10px 5px;
+        }
+        td input{
+            width: 40px;
+            height: 30px;
+            padding: 5px;
+        }
+        td a{
+            color:#ff3bff ;
+            font-size: 12px;
+        }
+        td img{
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        .total-price{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .total-price table{
+            border-top: 3px solid #ff3bff;
+            width: 100%;
+            max-width: 400px;
+        }
+        td:last-child{
+            text-align: right;
+        }
+        th:last-child{
+            text-align: right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Jumlah</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Original.jpg">
+                        <div>
+                            <p>Lapis Talas Original</p>
+                            <small>Harga: Rp.50.000.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="Nomor" value="1"></td>
+                <td>Rp.50.000.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Lapis Strawberry.JPG">
+                        <div>
+                            <p>Lapis Strawberry</p>
+                            <small>Harga: Rp.60.000.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="Nomor" value="1"></td>
+                <td>Rp.60.000.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="Lapis Susu.JPG">
+                        <div>
+                            <p>Lapis Susu</p>
+                            <small>Harga: Rp.65.000.000</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="Nomor" value="1"></td>
+                <td>Rp.65.000.000</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>Rp.175.000.000</td>
+                </tr>
+                <tr>
+                    <td>Pajak</td>
+                    <td>Rp.25.000.000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rp.200.000.000</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
